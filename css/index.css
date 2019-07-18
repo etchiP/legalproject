@@ -179,7 +179,6 @@ h2{
 .volunteer-signup{
   background-color: var( --teal-color);
   color:black;
-  border-radius: 25px;
   display: flex;
   flex-direction: row;
   align-items:center;
@@ -190,6 +189,7 @@ h2{
 .form{
   background-color: white;
   color: black;
+  border-radius: 25px;
   text-align: left;
   padding: 2em;
   display: flex;
