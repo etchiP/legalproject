@@ -11,6 +11,19 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3254976-32"></script>
+  <script>
+			var analyticsId = "UA-3254976-32";
+			var sessionId = getCookie("SESSIONID") ? getCookie("SESSIONID") : setCookie("SESSIONID",guid(),365);
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag( 'js', new Date() );
+			gtag( 'config', analyticsId, {
+				'dimension1': sessionId,
+				'dimension2': Date.now()
+			});
+		</script>
   </head>
   <body class="container-fluid">
 
