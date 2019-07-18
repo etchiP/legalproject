@@ -1,2 +1,1 @@
-# probononet
-Volunteer Disaster Legal Aid 
+legal project
