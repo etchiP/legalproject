@@ -50,13 +50,8 @@ h2{
   width: 200px;
   padding-left: 1em;
 }
-.navbar-nav {
-  
-  float: right;
-}
 .navbar-nav .nav-link {
   color: black;
-  float: right;
 }
 .navbar-nav .nav-link:hover {
   color: gray;
@@ -198,6 +193,7 @@ h2{
   text-align: left;
   padding: 2em;
   display: flex;
+  text-align: center;
   flex-direction:column;
   justify-content:center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
