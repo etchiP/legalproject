@@ -52,6 +52,7 @@ h2{
 }
 .navbar-nav .nav-link {
   color: black;
+  float: right;
 }
 .navbar-nav .nav-link:hover {
   color: gray;
@@ -72,7 +73,7 @@ h2{
 }
 .header h1{
   text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-shadow: 2px 2px 4px black;
   vertical-align: middle;
   line-height:450px;
