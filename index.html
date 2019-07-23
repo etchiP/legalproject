@@ -3,7 +3,14 @@
   <head>
     <meta charset = "utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Volunteer - Disaster Legal Aid</title>
+  <title>Get Started | Disaster Legal Aid</title>
+  <link rel="canonical" href="https://www.disasterlegalaid.org/get-started/" />
+  <meta name="description" content="">
+  <meta property="og:title" content="Get Started | Disaster Legal Aid" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.disasterlegalaid.org/get-started/" />
+  <meta property="og:image" content="https://dev.probono.net/dla-assets/image/header.jpg" />
+  <meta property="og:description" content="" />
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -69,22 +76,11 @@
 
 <!-- Form Redirect -->
 
-<!-- Hidden iframe -->
-<iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+onload="if(submitted) {window.location='thankYou.html';}"></iframe>
 
-<!-- Script to redirect to a custom page -->
-<script type="text/javascript">
-// replace "ss-submit" with the ID of your submit button
-document.getElementById("ss-submit").addEventListener("click", function(){
-  // adds a delay because the results page loads before the form has a chance to submit
-  setTimeout(function() {
-    // replace the url in quotes below to where you want to the user to be redirected to
-    window.location = "thankYou.html";
-  }, 1000);
-});
-</script>
-
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScfr3gOMSsjPT8p-qqspWNK3VT_Y4ADbwQ43Pd9TJvDcV4FFA/formResponse">
+         <form action="https://docs.google.com/forms/d/e/1FAIpQLScfr3gOMSsjPT8p-qqspWNK3VT_Y4ADbwQ43Pd9TJvDcV4FFA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <p>Please enter your information below to receive more information. We’ll also get in touch when a major disaster strikes to share available opportunities.</p>
           <div class="form-name">
               <div class="form-group name-field">
