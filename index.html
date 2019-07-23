@@ -54,24 +54,15 @@
       <div class="container form">
         <h2>Ready to Help?</h2>
 
-<!-- Form Redirect -->
-
-<!-- Hidden iframe -->
-<iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
-
 <!-- Script to redirect to a custom page -->
-<script type="text/javascript">
-// replace "ss-submit" with the ID of your submit button
-document.getElementById("ss-submit").addEventListener("click", function(){
-  // adds a delay because the results page loads before the form has a chance to submit
-  setTimeout(function() {
-    // replace the url in quotes below to where you want to the user to be redirected to
-    window.location = "thankYou.html";
-  }, 1000);
-});
-</script>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+onload="if(submitted) {window.location='thankYou.html';}"></iframe>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScfr3gOMSsjPT8p-qqspWNK3VT_Y4ADbwQ43Pd9TJvDcV4FFA/formResponse">
+
+
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScfr3gOMSsjPT8p-qqspWNK3VT_Y4ADbwQ43Pd9TJvDcV4FFA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <p>Please enter your information below to receive more information. We’ll also get in touch when a major disaster strikes to share available opportunities.</p>
           <div class="form-name">
               <div class="form-group name-field">
