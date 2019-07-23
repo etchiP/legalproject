@@ -50,6 +50,10 @@ h2{
   width: 200px;
   padding-left: 1em;
 }
+.navbar-nav {
+  
+  float: right;
+}
 .navbar-nav .nav-link {
   color: black;
   float: right;
