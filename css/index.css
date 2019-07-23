@@ -280,6 +280,7 @@ h2{
 }
 .info-text{
   padding: 1.5em 1.5em 0 1.5em;
+  text-align: center;
 }
 .info-section img{
   max-width: 100%;
