@@ -1,0 +1,519 @@
+/*GENERAL APPLY TO ALL*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Raleway:400,700,800|Work+Sans:600,700|Roboto:700,900|&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  font-size: 16px;
+  color: #232323;
+  font-weight: medium;
+}
+
+h2{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #0C2B55;
+}
+.full-width{
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+.area-spacing{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* removed variables because not supported in IE 11
+:root {
+  --teal-color: #6FC2CB;
+  --gray-color:#74757a;
+  --dark-blue-color:#002B58;
+  --green-color:#7EBA6B;
+  --heading-color:#0C2B55;
+  --form-color:#494949;
+  --p-color:#5E5F65;
+}*/
+
+.btn-lg.round {
+  border-radius: 24px;
+  background-color: #7EBA6B;
+  color:white;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5em;
+  width:245px;
+  height:2.5em;
+  margin: 1em 0;
+}
+
+.navbar-custom{
+  background-color: white!important;
+}
+.navbar-brand img{
+  width: 200px;
+  padding-left: 1em;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+}
+.navbar-nav .nav-link:hover {
+  color: gray;
+}
+
+.nav-item{
+  font-weight:lighter;
+}
+/*HEADER SECTION*/
+.header{
+  background-image: url('../image/header.jpg');
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  height:450px;
+  background-position: top;
+  background-size: cover;
+
+}
+.header h1{
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  text-shadow: 2px 2px 4px black;
+  vertical-align: middle;
+  line-height:650px;
+  color:white;
+  font-weight:400;
+  font-size:  4em;
+}
+
+.fa {
+  font-size: 1.5em !important;
+}
+
+/*HEADER SECTION MEDIA QUERIES*/
+@media screen and (max-width: 886px) {
+  .header h1 {
+    line-height: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .header h1{
+      font-size: 3rem;
+    }
+}
+
+  @media screen and (max-width: 600px) {
+    .header{
+      height: 400px;
+    }
+    .header h1{
+      font-size: 2.5em;
+    /*  line-height:400px; */
+    }
+
+    h2{
+      font-size:  1em;
+    }
+}
+
+  @media screen and (max-width: 500px) {
+    .header h1{
+      font-size: 2.25em;
+     /* line-height:400px; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .header{
+    height: 350px;
+  }
+  .header h1{
+    font-size: 2em;
+   /* line-height:350px; */
+  }
+}
+
+@media screen and (min-width: 985px) {
+  .header{
+    height: 650px;
+  }
+
+}
+/*MISSION SECTION*/
+.mission{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+
+}
+.mission-text{
+  width: 100%;
+}
+.mission img{
+  width: 100%;
+}
+.mission p{
+  color: #5E5F65;
+}
+.mission h2{
+  font-weight: 600;
+}
+/*MISSION SECTION MEDIA QUERIES*/
+@media (max-width: 1528px) and (min-width: 850px) {
+  .mission-image img{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .mission{
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content:center;
+}
+.mission .container{
+  padding-left: 5em;
+}
+
+  .mission-text{
+    padding-left: 3em;
+  }
+
+  .mission-img{
+    min-height: 900px;
+
+  }
+
+  .mission-text p{
+     /* max-width: 70%; */
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .mission-image {
+    max-height: 400px !important;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mission h2,
+  .mission p {
+    text-align: center;
+  }
+
+}
+
+
+/*FORM SECTION*/
+.volunteer-signup{
+  background-color: #6FC2CB;
+  color: #232323;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.form{
+  background-color: white;
+  color: #494949;
+  border-radius: 25px;
+  text-align: left;
+  padding: 2em;
+  display: flex;
+  text-align: center;
+  flex-direction:column;
+  justify-content:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.formText h2{
+  color:#232323;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form h2{
+  text-align: left;
+  font-weight: 600;
+}
+
+.form-control {
+  border-color: #858585 !important;
+}
+
+.form-control::placeholder {
+  color: #494949;
+}
+
+.submit-button{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*FORM SECTION MEDIA QUERIES*/
+@media screen and (min-width: 751px) {
+  .form {
+    padding: 2.5em 3em !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .volunteer-signup{
+    display: flex;
+    flex-wrap:wrap;
+    height:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .formText {
+    vertical-align: none;
+    line-height: 1.5em;
+  }
+
+  .form h2, .form p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .form-name{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+  }
+
+  .formText h2, p{
+  text-align: left;
+}
+
+.name-field{
+   width:48%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+ form{
+  /* width: 75%; */
+  margin: auto;
+ }
+}
+
+
+/*VOLUNTEER OPTIONS*/
+.options{
+  background-color: #6FC2CB;
+  padding: 3em 0.5em;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  text-align: center;
+}
+.info-section{
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1em 0em;
+  display: flex;
+  color: black;
+  width: 90%;
+  max-width: 900px;
+}
+.info-section h2{
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+}
+.info-section a{
+  text-decoration: none;
+}
+.info-text{
+  padding: 1.5em 1.5em 0 1.5em;
+  text-align: center;
+  color: #5E5F65;
+}
+.info-section img{
+  max-width: 100%;
+  height: 100%;
+  margin-right:-15px;
+}
+  .info-image img{
+  object-fit: cover;
+  width:100%;
+  border-radius: 0px 25px 25px 0px;
+  height: 100%;
+}
+
+}
+/*VOLUNTEER OPTIONS MEDIA QUERIES*/
+@media screen and (max-width: 790px) {
+  .info-section .btn-lg.round {
+    font-size: .95em;
+    font-weight: bold;
+    line-height: 1em;
+    width:225px;
+    height:2em;
+  }
+  .info-section h2{
+    font-size:16px;
+  }
+
+}
+@media screen and (max-width: 750px) {
+  .info-section h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 670px) {
+  .info-section h2{
+    font-size: 1.25em;
+  }
+  .info-text{
+    font-size: .90em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info-section img{
+    display: none;
+  }
+  .info-section{
+    text-align: center;
+    font-size: 1em;
+  }
+  .info-section .btn-lg.round {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.25em;
+    width:245px;
+    height:2.5em;
+    /* margin: 1em; */
+  }
+}
+@media screen and (min-width: 600px) {
+  .info-section{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .options{
+    padding: 1.5em .5em;
+  }
+
+  .info-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+  }
+}
+/*FOOTER SECTION*/
+footer{
+  background-color: #002B58;
+  margin:0px;
+  padding: 0;
+  text-align: center;
+  font-size: 0.75em;
+}
+footer h2{
+  color:white;
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+  width: 100%;
+  margin: auto;
+  padding-top: 1.85em;
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: flex-end;
+}
+footer ul {
+  justify-content: center;
+}
+footer h2 {
+  font-weight: 400;
+}
+ul li{
+  display: inline-block;
+  color:white;
+  padding: 0.5em;
+}
+li a{
+  text-decoration: none;
+  color:white;
+  font-weight: lighter;
+}
+hr{
+  width:85%;
+  background-color: #FFFFFF;
+}
+.footer-logos{
+  display: flex;
+  flexwrap: wrap;
+  justify-content:space-between;
+  padding:1em;
+}
+.footer-logos img{
+  max-width: 175px;
+  padding: 1em 1em;
+}
+
+.footer-links ul li a{
+  font-weight: lighter;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-links ul li a:hover{
+  text-decoration: none;
+  color:white;
+}
+/*FOOTER MEDIA QUERIES*/
+
+@media screen and (max-width: 500px) {
+    .footer-links ul li a{
+        font-size:  .75em;
+    }
+     ul li{
+      padding: .25em;
+     }
+     ul{
+      padding-left: 0px;
+     }
+}
+
+/*thank you page*/
+.return{
+    text-align: center;
+  vertical-align: middle;
+}
+h1.returnH{
+  line-height: 450px;
+}
+
+.return a{
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+}
+.return a:hover{
+  text-decoration: none;
+  color:white;
+}
+
+@media screen and (max-width: 984px) {
+  h1.returnH {
+    line-height: 250px;
+  }
+
+  .return {
+    font-size: 1.5em;
+  }
+}
