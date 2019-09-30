@@ -13,7 +13,6 @@ body{
 
 h2{
   font-family: 'Work Sans', sans-serif;
-  font-size: 2em;
   font-weight: 600;
   color: #0C2B55;
 }
@@ -23,9 +22,26 @@ h2{
   margin-left: -50vw;
   left: 50%;
 }
-.area-spacing{
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+
+.center-text{
+  text-align: center;
+  font-size: 26px;
+  font-family: newe-house-display;
+ 
+     padding: 50px 85px;
+
+}
+
+.center-text h2{
+  text-align: center;
+  font-size: 45px;
+  margin: .20em 0;
+
+}
+.center-text p{
+  margin: 2em 0;
+
 }
 
 /* removed variables because not supported in IE 11
@@ -70,41 +86,105 @@ h2{
   font-weight:lighter;
 }
 /*HEADER SECTION*/
+
+
 .header{
-  background-image: url('../image/header.jpg');
+  color:white;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../image/hero-image-headline.png');
   background-color: #cccccc;
   background-repeat: no-repeat;
   height:450px;
   background-position: top;
   background-size: cover;
+}
 
-}
-.header h1{
+
+.header h1 {
+  margin:0;
   text-align: center;
-  font-family: 'Anton', sans-serif;
-  text-shadow: 2px 2px 4px black;
-  vertical-align: middle;
-  line-height:650px;
-  color:white;
   font-weight:400;
-  font-size:  4em;
+  font-size:  3em;
+  color:white; 
+  font-family: 'Anton', sans-serif;
 }
+
+.header h2 {
+  margin:0;
+  text-align: center;
+  font-weight:400;
+  font-size:  3em;
+  color:green;
+  font-family: 'Anton', sans-serif;
+  
+}
+
+/*
+.textstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+   text-align: center;
+}
+
+
+.textstyle h1{
+   vertical-align: middle;
+   font-weight:400;
+   font-size:  3em;
+   color:white;
+   font-family: 'Anton', sans-serif;
+ 
+}
+.textstyle h2{
+  vertical-align: middle;
+   font-weight:400;
+   font-size:  3em;
+   color:green;
+   font-family: 'Anton', sans-serif;
+  
+  
+} */
+
 
 .fa {
   font-size: 1.5em !important;
 }
 
+
 /*HEADER SECTION MEDIA QUERIES*/
 @media screen and (max-width: 886px) {
   .header h1 {
-    line-height: 450px;
+    line-height: 50px;
   }
+  .center-text h2{
+  font-size: 32px;
+
+}
+.center-text p{
+  font-size:20px;
+
+}
+
 }
 
 @media screen and (max-width: 800px) {
     .header h1{
       font-size: 3rem;
     }
+    .center-text h2{
+  font-size: 30px;
+
+}
+.center-text p{
+  font-size: 16px;
+
+}
+
 }
 
   @media screen and (max-width: 600px) {
@@ -115,10 +195,23 @@ h2{
       font-size: 2.5em;
     /*  line-height:400px; */
     }
+    .header h2{
+      font-size: 2.5em;
+    /*  line-height:400px; */
+    }
 
     h2{
       font-size:  1em;
     }
+    .center-text h2{
+    font-size: 28px;
+
+    }
+    .center-text p{
+    font-size: 16px;
+
+}
+
 }
 
   @media screen and (max-width: 500px) {
@@ -147,7 +240,7 @@ h2{
 /*MISSION SECTION*/
 .mission{
   display: flex;
-  flex-direction:column;
+ 
   justify-content:center;
 
 }
@@ -291,7 +384,7 @@ h2{
   }
 
   .formText h2, p{
-  text-align: left;
+  text-align: center;
 }
 
 .name-field{
@@ -306,30 +399,30 @@ h2{
  }
 }
 
-
 /*VOLUNTEER OPTIONS*/
 .options{
-  background-color: #6FC2CB;
+  background-color: teal;
   padding: 3em 0.5em;
-  display: flex;
-  flex-direction:column;
-  align-items:center;
   text-align: center;
+  justify-content:space-between;
 }
 .info-section{
   background-color: white;
-  border-radius: 25px;
+
+  box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 1em 0em;
+  margin: 1em 1em;
   display: flex;
+  flex:1;
+flex-direction: row;
   color: black;
-  width: 90%;
-  max-width: 900px;
+  max-width: 680px;
+  display:inline-table;
+ 
 }
 .info-section h2{
   font-size: 1.5em;
-  font-weight: 600;
-  text-align: left;
+  font-weight: bold;
 }
 .info-section a{
   text-decoration: none;
@@ -337,21 +430,21 @@ h2{
 .info-text{
   padding: 1.5em 1.5em 0 1.5em;
   text-align: center;
-  color: #5E5F65;
+  font-size: 20px;
+  font-family: "NeueHaasDisplay-Bold";
 }
 .info-section img{
   max-width: 100%;
-  height: 100%;
-  margin-right:-15px;
-}
-  .info-image img{
-  object-fit: cover;
-  width:100%;
-  border-radius: 0px 25px 25px 0px;
-  height: 100%;
-}
+  margin:1.5em;
 
 }
+
+  .info-image img{
+  border-radius: 0px 0px 0px 0px;
+  height:80%;
+
+}
+
 /*VOLUNTEER OPTIONS MEDIA QUERIES*/
 @media screen and (max-width: 790px) {
   .info-section .btn-lg.round {
