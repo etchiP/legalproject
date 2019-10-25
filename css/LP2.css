@@ -12,10 +12,19 @@ body{
 }
 
 h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color:232323;
+}
+
+/*
+h2{
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   color: #0C2B55;
-}
+}*/
+
 .full-width{
   width: 100vw;
   position: relative;
@@ -26,8 +35,8 @@ h2{
 
 .center-text{
   text-align: center;
-  font-size: 26px;
-  font-family: newe-house-display;
+   font-size: 16px;
+ font-family: 'Raleway', sans-serif;
  
      padding: 50px 85px;
 
@@ -35,13 +44,20 @@ h2{
 
 .center-text h2{
   text-align: center;
-  font-size: 45px;
+  font-size: 32px;
   margin: .20em 0;
 
 }
 .center-text p{
   margin: 2em 0;
 
+}
+
+.extra-margin {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 2.50em;
+    margin-left: 0px;
 }
 
 /* removed variables because not supported in IE 11
@@ -66,6 +82,7 @@ h2{
   height:2.5em;
   margin: 1em 0;
 }
+
 
 .navbar-custom{
   background-color: white!important;
@@ -106,19 +123,22 @@ h2{
 .header h1 {
   margin:0;
   text-align: center;
-  font-weight:400;
-  font-size:  3em;
-  color:white; 
-  font-family: 'Anton', sans-serif;
+
+   font-weight: bold;
+  font-size:  4em;
+  color:#ffffff; 
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 4px black;
 }
 
 .header h2 {
   margin:0;
   text-align: center;
-  font-weight:400;
-  font-size:  3em;
-  color:green;
-  font-family: 'Anton', sans-serif;
+ font-weight: bold;
+  font-size:  4em;
+  color:#56983c;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 4px black;
   
 }
 
@@ -166,7 +186,7 @@ h2{
 
 }
 .center-text p{
-  font-size:20px;
+  font-size:16px;
 
 }
 
@@ -177,7 +197,7 @@ h2{
       font-size: 3rem;
     }
     .center-text h2{
-  font-size: 30px;
+  font-size: 32px;
 
 }
 .center-text p{
@@ -257,7 +277,7 @@ h2{
   font-weight: 600;
 }
 /*MISSION SECTION MEDIA QUERIES*/
-@media (max-width: 1528px) and (min-width: 850px) {
+@media (max-width: 950px) and (min-width: 850px) {
   .mission-image img{
     object-fit: cover;
     width:100%;
@@ -408,7 +428,7 @@ h2{
 }
 .info-section{
   background-color: white;
-
+  border-radius: 25px;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 1em 1em;
@@ -430,8 +450,8 @@ flex-direction: row;
 .info-text{
   padding: 1.5em 1.5em 0 1.5em;
   text-align: center;
-  font-size: 20px;
-  font-family: "NeueHaasDisplay-Bold";
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 .info-section img{
   max-width: 100%;
@@ -442,6 +462,7 @@ flex-direction: row;
   .info-image img{
   border-radius: 0px 0px 0px 0px;
   height:80%;
+  height: 142px;
 
 }
 
