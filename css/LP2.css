@@ -11,19 +11,19 @@ body{
   font-weight: medium;
 }
 
-h2{
+/*h2{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   font-weight: bold;
-  color:232323;
-}
+  color:#0C2B55;
+}*/
 
-/*
+
 h2{
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   color: #0C2B55;
-}*/
+}
 
 .full-width{
   width: 100vw;
@@ -37,7 +37,7 @@ h2{
   text-align: center;
    font-size: 16px;
  font-family: 'Raleway', sans-serif;
- 
+
      padding: 50px 85px;
 
 }
@@ -46,6 +46,7 @@ h2{
   text-align: center;
   font-size: 32px;
   margin: .20em 0;
+  font-weight: 700;
 
 }
 .center-text p{
@@ -53,7 +54,14 @@ h2{
 
 }
 
+
 .extra-margin {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 4.00em;
+    margin-left: 0px;
+}
+.extra-margin2 {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 2.50em;
@@ -111,7 +119,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../image/hero-image-headline.png');
+  background-image: url('../image/hero-image-headline.jpg');
   background-color: #cccccc;
   background-repeat: no-repeat;
   height:450px;
@@ -126,20 +134,13 @@ h2{
 
    font-weight: bold;
   font-size:  4em;
-  color:#ffffff; 
+  color:#ffffff;
   font-family: 'Roboto', sans-serif;
   text-shadow: 2px 2px 4px black;
 }
 
-.header h2 {
-  margin:0;
-  text-align: center;
- font-weight: bold;
-  font-size:  4em;
+.header h1:last-child {
   color:#56983c;
-  font-family: 'Roboto', sans-serif;
-  text-shadow: 2px 2px 4px black;
-  
 }
 
 /*
@@ -158,7 +159,7 @@ h2{
    font-size:  3em;
    color:white;
    font-family: 'Anton', sans-serif;
- 
+
 }
 .textstyle h2{
   vertical-align: middle;
@@ -166,8 +167,8 @@ h2{
    font-size:  3em;
    color:green;
    font-family: 'Anton', sans-serif;
-  
-  
+
+
 } */
 
 
@@ -179,7 +180,7 @@ h2{
 /*HEADER SECTION MEDIA QUERIES*/
 @media screen and (max-width: 886px) {
   .header h1 {
-    line-height: 50px;
+    line-height: 1.15em;
   }
   .center-text h2{
   font-size: 32px;
@@ -260,7 +261,7 @@ h2{
 /*MISSION SECTION*/
 .mission{
   display: flex;
- 
+
   justify-content:center;
 
 }
@@ -412,7 +413,8 @@ h2{
   }
 }
 
-@media screen and (min-width: 1500px) {
+
+@media screen and (min-width: 885px) and (max-width: 1320px) {
  form{
   /* width: 75%; */
   margin: auto;
@@ -421,7 +423,7 @@ h2{
 
 /*VOLUNTEER OPTIONS*/
 .options{
-  background-color: teal;
+  background-color: #6FC2CB;
   padding: 3em 0.5em;
   text-align: center;
   justify-content:space-between;
@@ -436,9 +438,9 @@ h2{
   flex:1;
 flex-direction: row;
   color: black;
-  max-width: 680px;
+  max-width: 400px;
   display:inline-table;
- 
+
 }
 .info-section h2{
   font-size: 1.5em;
@@ -466,18 +468,129 @@ flex-direction: row;
 
 }
 
+@media screen and (min-width: 1444px) {
+ form{
+  /* width: 75%; */
+  margin: auto;
+ }
+}
+
+/*VOLUNTEER OPTIONS*/
+.options{
+  background-color: #6FC2CB;
+  padding: 3em 0.5em;
+  text-align: center;
+  justify-content:space-between;
+}
+.info-section{
+  background-color: white;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1em 1em;
+  display: flex;
+  flex:1;
+flex-direction: row;
+  color: black;
+  max-width: 650px;
+  display:inline-table;
+
+}
+.info-section h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.info-section a{
+  text-decoration: none;
+}
+.info-text{
+  padding: 1.5em 1.5em 0 1.5em;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.info-section img{
+  max-width: 100%;
+  margin:1.5em;
+
+}
+
+  .info-image img{
+  border-radius: 0px 0px 0px 0px;
+  height:80%;
+  height: 142px;
+
+}
+
+
+@media screen and (min-width: 1445px) {
+ form{
+  /* width: 75%; */
+  margin: auto;
+ }
+}
+
+/*VOLUNTEER OPTIONS*/
+.options{
+  background-color: #6FC2CB;
+  padding: 3em 0.5em;
+  text-align: center;
+  justify-content:space-between;
+}
+.info-section{
+  background-color: white;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1em 1em;
+  display: flex;
+  flex:1;
+flex-direction: row;
+  color: black;
+  max-width: 400px;
+  display:inline-table;
+
+}
+.info-section h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.info-section a{
+  text-decoration: none;
+}
+.info-text{
+  padding: 1.5em 1.5em 0 1.5em;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.info-section img{
+  max-width: 100%;
+  margin:1.5em;
+
+}
+
+  .info-image img{
+  border-radius: 0px 0px 0px 0px;
+  height:80%;
+  height: 142px;
+
+}
+
+
+
 /*VOLUNTEER OPTIONS MEDIA QUERIES*/
 @media screen and (max-width: 790px) {
   .info-section .btn-lg.round {
     font-size: .95em;
     font-weight: bold;
-    line-height: 1em;
+    line-height: .75em;
     width:225px;
     height:2em;
   }
-  .info-section h2{
+  /*.info-section h2{
     font-size:16px;
-  }
+  }*/
 
 }
 @media screen and (max-width: 750px) {
@@ -486,16 +599,22 @@ flex-direction: row;
   }
 }
 @media screen and (max-width: 670px) {
-  .info-section h2{
+  /*.info-section h2{
     font-size: 1.25em;
-  }
+  }*/
   .info-text{
     font-size: .90em;
   }
 }
 @media screen and (max-width: 600px) {
+  .center-text {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  
   .info-section img{
-    display: none;
+    height: 4.5rem;
+    margin: .75rem;
   }
   .info-section{
     text-align: center;
